@@ -10,10 +10,11 @@ import {NgForOf, NgIf, NgOptimizedImage} from '@angular/common';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'personal-website-story-mode';
+  title = 'Sajeer Babu';
 
   name = 'Sajeer';
   profileDescription = 'I\'m an Associate Technical Architect, A full-time Researcher and more.';
+  profileImage = './assets/images/personal/my-image.png'
 
   experiences = [
     {
@@ -28,11 +29,11 @@ export class AppComponent {
         },
         {
           type: 'html',
-          content: `As an associated technical architect, my role is to architect new products from scratch and maintain architectural policies across all the projects.`
+          content: `I was responsible for both designing new products from scratch and ensuring that all projects adhered to established architectural policies.`
         },
         {
           type: 'html',
-          content: `Built some projects from scratch at retailcloud, some of them are like Vendor Portal which have the ability to send RFID tag printing request to vendors and vendor will print RFID tags and stick on the products before sending to the stores and RFID Based Inventory Management App which will be used to scan all items in inventory in few seconds using RFID functionality thus hours of struggles and human errors will be eliminated. These projects are attracted hundreds of more customers into retailcloud ecosystem of retail products.`
+          content: `One such project was the <span class="font-bold">Vendor Portal</span>, which streamlined the process of sending RFID tag printing requests to vendors. This system eliminated the need for manual tag printing, ensuring that products arrived at stores with pre-applied RFID tags. Another project I spearheaded was the <span class="font-bold">RFID-Based Inventory Management App</span>. This innovative app utilizes <span class="font-bold">RFID technology</span> to scan entire inventories in seconds, drastically reducing the time and manpower required for traditional inventory checks. These projects not only improved operational efficiency but also attracted a significant number of new customers to the retailcloud ecosystem.`
         }
       ]
     },
@@ -48,11 +49,11 @@ export class AppComponent {
         },
         {
           type: 'html',
-          content: `The team under me got expanded to 6 to 10 people, so my primary goals have changed a little to 50% of managing team, planning and executing sprints, etc and the next 50% into do the tasks that need more experience and concentration.`
+          content: `As my team grew from 6 to 10 people, my role evolved to encompass both leadership and technical expertise. My focus shifted to a 50/50 split, dedicating half my time to managing the team, planning and executing sprints, and ensuring smooth project delivery. The other half involved tackling complex tasks requiring experience and focused attention.`
         },
         {
           type: 'html',
-          content: `During this period, retailcloud have implemented a new restaurant management app called <a href="https://retailcloud.com/partners/tikt.html" target="_blank" class="text-blue-600 underline">Tikt</a>. So I have implemented a new console portal project called Restaurant Console from scratch to handle all the restaurant based processes.`
+          content: `During this time, our company, RetailCloud, implemented a new restaurant management application called <a href="https://retailcloud.com/partners/tikt.html" target="_blank" class="text-blue-600 underline">Tikt</a>. To complement Tikt, I spearheaded the development of a brand new console portal project named <span class="font-bold">Restaurant Console</span>. Built from the ground up, Restaurant Console acts as a centralized hub for managing all <span class="font-bold">restaurant-related processes</span> within the Tikt ecosystem.`
         }
       ]
     },
@@ -68,15 +69,15 @@ export class AppComponent {
         },
         {
           type: 'html',
-          content: `This was a phase of enhanced skill development in Spring Boot based microservices development. We had an OAuth2 based authorization service project, I have created many other microservices in spring boot from scratch and integrated with the OAuth2 project.`
+          content: `My focus here was on developing microservices using <span class="font-bold">Spring Boot</span>. I played a key role in building an <span class="font-bold">OAuth2</span> authorization service and several other microservices from scratch. These microservices seamlessly integrated with the authorization service.`
         },
         {
           type: 'html',
-          content: `I have created an internal SDK from scratch and integrated with all the microservices, so to reduce boiler plate codes and to reuse most of the authorization configured codes.`
+          content: `To streamline development and reduce code duplication, I created an internal <span class="font-bold">SDK</span>. This SDK encapsulated common functionalities, including pre-configured authorization logic, eliminating the need to rewrite boilerplate code across all microservices.`
         },
         {
           type: 'html',
-          content: `I have integrated gRPC in the internal SDK so that the microservices can talk to each other seamlessly.`
+          content: `Furthermore, I implemented <span class="font-bold">gRPC</span> within the SDK to enable efficient communication between the microservices, ensuring a smooth and cohesive system.`
         }
       ]
     },
@@ -92,11 +93,11 @@ export class AppComponent {
         },
         {
           type: 'html',
-          content: `Handled enhancements, bug fixing and support for almost all the legacy projects at retailcloud except mobile projects. I had to enhance a lot of old codes and project to latest one.`
+          content: `At this phase, my primary focus was in maintaining and enhancing their <span class="font-bold">legacy projects</span>, excluding mobile projects. This involved significant <span class="font-bold">code upgrades</span>, ensuring compatibility with the latest technologies.`
         },
         {
           type: 'html',
-          content: `I had to work at devops part for almost all the projects at this time as we didn't had a devops staff. I had to handle almost all deployments, log extractions, etc. Finally I had to setup a devops pipeline for deployment automation as well.`
+          content: `In the absence of a dedicated <span class="font-bold">DevOps</span> team, I took on these responsibilities as well. I handled <span class="font-bold">deployments</span>, <span class="font-bold">log extractions</span>, and other tasks. To streamline these processes, I even went on to set up a <span class="font-bold">DevOps pipeline for automated deployments</span>.`
         }
       ]
     },
@@ -112,17 +113,24 @@ export class AppComponent {
         },
         {
           type: 'html',
-          content: `This was a phase of struggles and learning. The platform was UAE based banking projects called WPS and FTS. I had to work on bot for almost 4 of the banking customers. Had a hand on in fast development, deployment, bug fixing, customer support, etc.`
+          content: `This period was a challenging but rewarding learning experience. I honed my skills working on bot development projects for several banking clients in the UAE, specifically focusing on <span class="font-bold">WPS and FTS</span> platforms. My responsibilities included rapid development, deployment, bug fixing, and customer support..`
         },
         {
           type: 'html',
-          content: `The best part of this phase was, I got a chance to visit onsite for the major banking client at UAE for three months, this visit was to do enhancements and deployments as banking projects are mostly deployed offline.`
+          content: `A highlight of this phase was a three-month on-site visit at a major UAE banking client.  Since banking projects are often deployed offline, this visit was crucial for implementing enhancements and ensuring a smooth rollout for the <span class="font-bold">banking projects</span>.`
         }
       ]
     }
   ];
 
   socialLinks = [
+    {
+      name: 'Email',
+      icon: {
+        default: './assets/images/icons/social/icon-email.svg'
+      },
+      link: 'mailto:sajeerzeji44@gmail.com'
+    },
     {
       name: 'LinkedIn',
       icon: {
@@ -198,13 +206,13 @@ export class AppComponent {
   featuredProducts = [
     {
       title: 'Startie',
-      description: `Startie will alert you when any of your shopify apps competitor gets a review.`,
+      description: `Startie will <span class="font-bold">alert</span> you when any of your shopify apps <span class="font-bold">competitor</span> gets a <span class="font-bold">review</span>.`,
       link: 'https://startie-dca92.web.app/',
       releasedOn: 'Apr 2024'
     },
     {
       title: 'Helloii',
-      description: `AI Sales Person for shopify stores. This will let the store customers talk with an AI about the products.`,
+      description: `<span class="font-bold">AI Sales Person</span> for shopify stores. This will let the store customers <span class="font-bold">talk with an AI</span> about the products.`,
       link: 'https://helloii.com/',
       releasedOn: 'October 2024'
     }
@@ -216,11 +224,11 @@ export class AppComponent {
       items: [
         {
           title: `Shopify Apps Scraper`,
-          description: `This is a python script to scrape and fetch all the shopify apps. I could scrape 9000+ apps.`
+          description: `This is a <span class="font-bold">python script</span> to <span class="font-bold">scrape</span> and fetch all the shopify apps. I could scrape 9000+ apps.`
         },
         {
           title: `Startie`,
-          description: `Startie will alert you when any of your shopify apps competitor gets a review.`,
+          description: `Startie will <span class="font-bold">alert</span> you when any of your shopify apps <span class="font-bold">competitor</span> gets a <span class="font-bold">review</span>.`,
           link: 'https://startie-dca92.web.app/',
           releasedOn: 'Apr 2024'
         }
@@ -231,13 +239,13 @@ export class AppComponent {
       items: [
         {
           title: `Helloii`,
-          description: `AI Sales Person for shopify stores. This will let the store customers talk with an AI about the products.`,
+          description: `<span class="font-bold">AI Sales Person</span> for shopify stores. This will let the store customers <span class="font-bold">talk with an AI</span> about the products.`,
           link: 'https://helloii.com/',
           releasedOn: 'Oct 2024'
         },
         {
           title: `Yourslash`,
-          description: `Initiated a new project just like oSlash but more features.`,
+          description: `Initiated a new project just like <span class="font-bold">oSlash</span> but with more features.`,
           link: 'https://yourslash.com/'
         },
         {
@@ -247,29 +255,29 @@ export class AppComponent {
         },
         {
           title: `ThinkrGPT`,
-          description: `A ChatGPT like web app, which will learn about the user at first and respond to every queries with personalized response. Sunsetted due to high infra structure costs.`,
+          description: `A <span class="font-bold">ChatGPT-Like</span> web app, which will learn about the user at first and respond to every queries with <span class="font-bold">personalized response</span>. <span class="font-bold">Sunsetted</span> due to high infra structure costs.`,
         },
         {
           title: `OnPageGPT Chrome Extension`,
-          description: `An interactive AI tool on every web page, where we can query anything about the visited website. Sunsetted due to high infra structure costs.`,
+          description: `An <span class="font-bold">interactive AI tool</span> on every web page, where we can query anything about the visited website. <span class="font-bold">Sunsetted</span> due to high infra structure costs.`,
         },
         {
           title: `Multi Tenant API Platform`,
-          description: `A multi tenant API platform in Python Django, which integrated with almost all openai APIs also with token based authentication. Development discontinued due to lack of time to spend.`,
+          description: `A <span class="font-bold">multi tenant</span> API platform in <span class="font-bold">Python Django</span>, which integrated with almost all openai APIs also with token based authentication. Development <span class="font-bold">discontinued</span> due to lack of time to spend.`,
         },
         {
           title: `Enablement OS`,
-          description: `Frnd.ai project have been changed to Enablement OS, with a slight deviation, eventually we sunsetted the project due to some unintentional issues came in.`,
+          description: `<span class="font-bold">Frnd.ai</span> project have been changed to <span class="font-bold">Enablement OS</span>, with a slight deviation, eventually we <span class="font-bold">sunsetted</span> the project due to some unintentional issues came in.`,
           link: 'https://frnd.ai/manifesto'
         },
         {
           title: `Soul Chrome Extension`,
-          description: `A chrome extension that will let us take synced notes on every tabs we open.`,
+          description: `A <span class="font-bold">chrome extension</span> that will let us take synced notes on every tabs we open.`,
           link: 'https://soul.frnd.ai/'
         },
         {
           title: `Helloii Chrome Extension`,
-          description: `A chrome extension that will let us query chatgpt prompt on every tab we open.`,
+          description: `A <span class="font-bold">chrome extension</span> that will let us query chatgpt prompt on every tab we open.`,
           link: 'https://chrome.helloii.com/'
         },
       ]
@@ -279,12 +287,12 @@ export class AppComponent {
       items: [
         {
           title: `Frnd.ai`,
-          description: `A tool to sales people for Sales Enablement by Content Organization and Sharing with Analytics with a help of an AI model. Eventually changed the idea to Enablement OS and sunsetted.`,
+          description: `A tool to sales people for <span class="font-bold">Sales Enablement</span> by Content Organization and Sharing with Analytics with a help of an <span class="font-bold">AI model</span>. Eventually changed the idea to Enablement OS and <span class="font-bold">sunsetted</span>.`,
           link: 'https://frnd.ai'
         },
         {
           title: `Frnd.ai Chrome Extension`,
-          description: `A chrome extension which will be used to share contents and take analytics, this was working with Gmail, Outlook, Hubspot, Salesforce and LinkedIn, but eventually we sunsetted the project.`,
+          description: `A <span class="font-bold">chrome extension</span> which will be used to share contents and take analytics, this was working with <span class="font-bold">Gmail, Outlook, Hubspot, Salesforce and LinkedIn</span>, but eventually we <span class="font-bold">sunsetted</span> the project.`,
           link: 'https://frnd.ai'
         },
       ]
@@ -294,12 +302,12 @@ export class AppComponent {
       items: [
         {
           title: `CSRF Validator`,
-          description: `A library which can be used in Node.Js or NestJs projects to protect API requests with CSRF token.`,
+          description: `An npm <span class="font-bold">library</span> which can be used in <span class="font-bold">Node.Js</span> or <span class="font-bold">NestJs</span> projects to protect API requests with <span class="font-bold">CSRF token</span>.`,
           link: 'https://www.npmjs.com/package/csrf-validator'
         },
         {
           title: `Multi Tenant Microservices`,
-          description: `This is a multi tenant microservices API platform built in Spring Boot along with postgresql and flywaydb.`
+          description: `This is a <span class="font-bold">multi tenant microservices</span> API platform built in <span class="font-bold">Spring Boot</span> along with <span class="font-bold">postgresql</span> and <span class="font-bold">flywaydb</span>.`
         }
       ]
     }
@@ -308,24 +316,73 @@ export class AppComponent {
   highlightProjects: any = [
     {
       title: `Enablement OS`,
-      description: `Frnd.ai project have been changed to Enablement OS, with a slight deviation, eventually we sunsetted the project due to some unintentional issues came in.`,
+      description: `<span class="font-bold">Frnd.ai</span> project have been changed to <span class="font-bold">Enablement OS</span>, with a slight deviation, eventually we <span class="font-bold">sunsetted</span> the project due to some unintentional issues came in.`,
       link: 'https://frnd.ai/manifesto'
     },
     {
       title: `Frnd.ai`,
-      description: `A tool to sales people for Sales Enablement by Content Organization and Sharing with Analytics with a help of an AI model. Eventually changed the idea to Enablement OS and sunsetted.`,
+      description: `A tool to sales people for <span class="font-bold">Sales Enablement</span> by Content Organization and Sharing with Analytics with a help of an <span class="font-bold">AI model</span>. Eventually changed the idea to Enablement OS and <span class="font-bold">sunsetted</span>.`,
       link: 'https://frnd.ai'
     },
     {
       title: `Frnd.ai Chrome Extension`,
-      description: `A chrome extension which will be used to share contents and take analytics, this was working with Gmail, Outlook, Hubspot, Salesforce and LinkedIn, but eventually we sunsetted the project.`,
+      description: `A <span class="font-bold">chrome extension</span> which will be used to share contents and take analytics, this was working with Gmail, Outlook, Hubspot, Salesforce and LinkedIn, but eventually we <span class="font-bold">sunsetted</span> the project.`,
       link: 'https://frnd.ai'
     },
     {
       title: `Helloii`,
-      description: `AI Sales Person for shopify stores. This will let the store customers talk with an AI about the products.`,
+      description: `<span class="font-bold">AI Sales Person</span> for shopify stores. This will let the store customers <span class="font-bold">talk with an AI</span> about the products.`,
       link: 'https://helloii.com/',
       releasedOn: 'Oct 2024'
     }
-  ]
+  ];
+
+  newsLetters: any = [
+    {
+      title: 'LinkedIn: An innovation digest',
+      link: 'https://www.linkedin.com/newsletters/7038592163324039168/'
+    },
+    {
+      title: 'Substack: An innovation digest',
+      link: 'https://innovationdigest.substack.com/'
+    }
+  ];
+
+  blogs: any = [
+    {
+      title: 'The Whole Universe is a Second',
+      link: 'https://medium.com/@sajeerzeji44/the-whole-universe-is-a-second-c8e8f228c054',
+      publishedOn: 'May 2021'
+    },
+    {
+      title: 'Spring Boot Flyway DB Version Control Integration',
+      link: 'https://medium.com/@sajeerzeji44/spring-boot-flyway-db-version-control-integration-1df2e90474e6',
+      publishedOn: 'Apr 2020'
+    },
+    {
+      title: 'OAuth2 with Django',
+      link: 'https://medium.com/@sajeerzeji44/oauth2-with-django-790e0a85f678',
+      publishedOn: 'Feb 2020'
+    },
+    {
+      title: 'RSocket for Spring Boot Microservices',
+      link: 'https://medium.com/@sajeerzeji44/rsocket-for-spring-boot-microservices-d2f68f69a615',
+      publishedOn: 'Sep 2019'
+    },
+    {
+      title: 'GRPC for Spring Boot Microservices',
+      link: 'https://medium.com/@sajeerzeji44/grpc-for-spring-boot-microservices-bd9b79569772',
+      publishedOn: 'Sep 2019'
+    },
+    {
+      title: 'Hosting your React Web App to Firebase',
+      link: 'https://medium.com/@sajeerzeji44/hosting-your-react-web-app-to-firebase-98265f45831',
+      publishedOn: 'May 2019'
+    },
+    {
+      title: 'Create React Web Application',
+      link: 'https://medium.com/@sajeerzeji44/create-react-js-application-43ff4a0fb31',
+      publishedOn: 'May 2019'
+    }
+  ];
 }
