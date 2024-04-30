@@ -1,12 +1,12 @@
-<div class="w-screen h-screen flex items-center">
+<div class="w-screen h-screen flex items-center tracking-[3px]">
   <div class="w-full px-4 lg:px-[20%]">
     <div class="flex gap-10">
       <div class="flex flex-wrap">
-        <div class="w-full text-2xl tracking-[3px] font-bold">
-          Hi I'm Sajeer
+        <div class="w-full text-2xl font-bold">
+          Hi I'm {{name}}
         </div>
-        <div class="w-full tracking-[3px] mt-4">
-          I'm an Associate Technical Architect, A full-time Researcher and more.
+        <div class="w-full mt-4">
+          {{profileDescription}}
         </div>
         <div class="w-full flex gap-4 mt-4">
           <a class="cursor-pointer" *ngFor="let socialLink of socialLinks" target="_blank" [href]="socialLink.link" [title]="socialLink.name">
@@ -23,23 +23,108 @@
   </div>
 </div>
 
-<div class="w-screen h-screen flex items-center">
-  <div class="mx-6">
+<div class="w-screen flex items-start grid grid-cols-12 px-20">
+  <div class="col-span-8">
     <ol class="relative border-s border-gray-200">
-      <li class="mb-10 ms-6">
-        <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white ">
-            <svg class="w-2.5 h-2.5 text-blue-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-            </svg>
-        </span>
-        <ng-container *ngFor="let experience of experiences; let i = index;">
+      <ng-container *ngFor="let experience of experiences; let i = index;">
+        <li class="mb-10 ms-6">
+          <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white ">
+              <svg class="w-2.5 h-2.5 text-blue-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+              </svg>
+          </span>
           <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-400">{{experience.years.from + ' - ' + experience.years.to}} <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded   ms-3" *ngIf="i === 0">Latest</span></h3>
           <!--        <time class="block mb-2 text-sm font-normal leading-none text-gray-400 ">Released on January 13th, 2022</time>-->
           <ng-container *ngFor="let info of experience.description">
-            <p class="text-base font-normal text-gray-500" *ngIf="info.type === 'html'" [innerHTML]="info.content"></p>
+            <p class="text-base font-normal text-gray-500 my-1" *ngIf="info.type === 'html'" [innerHTML]="info.content"></p>
           </ng-container>
-        </ng-container>
-      </li>
+        </li>
+      </ng-container>
     </ol>
+  </div>
+
+  <div class="px-20 col-span-4">
+    <div class="w-full font-bold mb-3">Featured</div>
+
+    <div class="p-5 mb-4 border border-gray-100 rounded-lg bg-gray-50">
+      <ol class="divide-y divider-gray-200">
+        <li *ngFor="let product of featuredProducts">
+          <a [href]="product.link ? product.link : '#'" target="_blank" class="items-center block p-3 sm:flex hover:bg-gray-100">
+            <div class="text-gray-600">
+              <div class="text-base font-normal">{{product.title}}</div>
+              <div class="text-sm font-normal">{{product.description}}</div>
+              <span class="inline-flex items-center text-xs font-normal text-gray-500">
+                  Released On: {{product.releasedOn}}
+              </span>
+            </div>
+          </a>
+        </li>
+      </ol>
+    </div>
+
+    <div class="p-5 mb-4 border border-gray-100 rounded-lg bg-gray-50" *ngFor="let featuredBlogItem of featuredBlogs">
+      <div class="text-xs font-semibold text-gray-900">{{featuredBlogItem.type}}</div>
+      <a [href]="featuredBlogItem.link" target="_blank" class="text-lg font-semibold text-gray-900">{{featuredBlogItem.title}}</a>
+      <ol class="mt-3 divide-y divider-gray-200">
+        <li *ngFor="let item of featuredBlogItem.items">
+          <a [href]="item.link ? item.link : '#'" target="_blank" class="items-center block p-3 sm:flex hover:bg-gray-100">
+            <div class="text-gray-600">
+              <div class="text-base font-normal">{{item.title}}</div>
+              <div class="text-sm font-normal">{{item.shortDescription}}</div>
+              <span class="inline-flex items-center text-xs font-normal text-gray-500">
+                  {{item.footer}}
+              </span>
+            </div>
+          </a>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+
+<div class="w-full px-20 bg-gray-100 py-10">
+  <div class="w-full font-bold mb-10 text-xl">20% Projects</div>
+
+  <div class="grid grid-cols-12 w-full">
+    <div class="col-span-8">
+      <ol class="relative border-s border-gray-200">
+        <li class="mb-10 ms-6" *ngFor="let set of petProjectsSets; let pi = index;">
+          <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-gray-100">
+            <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.99996 5.83329C10.4602 5.83329 10.8333 5.4602 10.8333 4.99996C10.8333 4.53972 10.4602 4.16663 9.99996 4.16663C9.53972 4.16663 9.16663 4.53972 9.16663 4.99996C9.16663 5.4602 9.53972 5.83329 9.99996 5.83329Z" fill="#1E40AF"/>
+              <path d="M5 14.1666H15V15.8333H5V14.1666ZM8.33333 9.85829L10.66 12.1866L13.9367 8.90746L15 9.99996V6.66663H11.6667L12.7583 7.72913L10.6592 9.82829L8.33333 7.49996L5 10.8333L6.17833 12.0116L8.33333 9.85829Z" fill="#1E40AF"/>
+              <path d="M15.8333 2.49995H13.085C13.0031 2.37674 12.9141 2.25847 12.8183 2.14578L12.81 2.13578C12.1977 1.42266 11.3363 0.970187 10.4016 0.870784C10.1362 0.820253 9.86369 0.820253 9.59829 0.870784C8.66366 0.970187 7.80223 1.42266 7.18996 2.13578L7.18163 2.14578C7.08585 2.2582 6.99681 2.37619 6.91496 2.49912L4.16663 2.49995C3.50379 2.50061 2.86829 2.76422 2.39959 3.23291C1.93089 3.70161 1.66729 4.33711 1.66663 4.99995V16.6666C1.66729 17.3295 1.93089 17.965 2.39959 18.4337C2.86829 18.9023 3.50379 19.166 4.16663 19.1666H15.8333C16.4961 19.166 17.1316 18.9023 17.6003 18.4337C18.069 17.965 18.3326 17.3295 18.3333 16.6666V4.99995C18.3326 4.33711 18.069 3.70161 17.6003 3.23291C17.1316 2.76422 16.4961 2.50061 15.8333 2.49995ZM16.6666 16.6666C16.6666 16.8876 16.5788 17.0996 16.4225 17.2559C16.2663 17.4122 16.0543 17.4999 15.8333 17.4999H4.16663C3.94568 17.4997 3.73385 17.4119 3.57761 17.2556C3.42138 17.0994 3.33351 16.8876 3.33329 16.6666V4.99995C3.33351 4.779 3.42138 4.56717 3.57761 4.41094C3.73385 4.25471 3.94568 4.16684 4.16663 4.16662H7.95829C8.05392 3.69566 8.30943 3.27225 8.68152 2.96813C9.05361 2.664 9.51939 2.49786 9.99996 2.49786C10.4805 2.49786 10.9463 2.664 11.3184 2.96813C11.6905 3.27225 11.946 3.69566 12.0416 4.16662H15.8333C16.0542 4.16684 16.2661 4.25471 16.4223 4.41094C16.5785 4.56717 16.6664 4.779 16.6666 4.99995V16.6666Z" fill="#1E40AF"/>
+            </svg>
+          </span>
+          <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-400">{{set.year}}</h3>
+          <div class="items-center justify-between p-4 mt-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:flex" *ngFor="let project of set.items; let i = index;">
+            <time class="mb-1 text-xs font-normal text-gray-400 sm:order-last sm:mb-0"><span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-3" *ngIf="pi === 0 && i <= 1">Latest</span></time>
+            <div class="flex items-start w-full grid grid-cols-12 text-sm font-normal text-gray-500">
+              <div class="col-span-2 font-bold mr-2" *ngIf="!project.link">{{project.title}}:</div>
+              <div class="col-span-2 font-bold mr-2" *ngIf="project.link"><a [href]="project.link" target="_blank" class="text-blue-600 underline">{{project.title}}</a>:</div>
+              <div class="col-span-10">{{project.description}}</div>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="px-20 col-span-4">
+      <div class="w-full font-bold mb-3">Highlights</div>
+
+      <div class="p-5 mb-4 border border-gray-100 rounded-lg bg-gray-50">
+        <ol class="divide-y divider-gray-200">
+          <li *ngFor="let project of highlightProjects">
+            <a [href]="project.link ? project.link : '#'" target="_blank" class="items-center block p-3 sm:flex hover:bg-gray-100">
+              <div class="text-gray-600">
+                <div class="text-base font-normal">{{project.title}}</div>
+                <div class="text-sm font-normal">{{project.description}}</div>
+              </div>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </div>
   </div>
 </div>
