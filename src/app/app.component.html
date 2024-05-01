@@ -1,6 +1,31 @@
 <div class="w-screen h-screen flex items-center tracking-[3px]">
+  <div class="w-full md:w-[55%] block md:flex gap-10 items-center mx-auto">
+    <div class="flex flex-wrap w-[35%] md:w-[25%] mb-10 md:mb-0">
+      <div class="overflow-clip rounded-b-3xl">
+        <img [src]="profileImage" />
+      </div>
+    </div>
+
+    <div class="flex px-4">
+      <div class="w-full">
+        <div class="w-full text-2xl font-bold">
+          Hi I'm {{name}}
+        </div>
+        <div class="mt-4">
+          {{profileDescription}}
+        </div>
+        <div class="w-full flex gap-4 mt-4">
+          <a class="cursor-pointer" *ngFor="let socialLink of socialLinks" target="_blank" [href]="socialLink.link" [title]="socialLink.name">
+            <img [src]="socialLink.icon.default">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--<div class="w-screen h-screen flex items-center tracking-[3px]">
   <div class="w-full px-4 lg:px-[20%]">
-    <div class="block lg:flex gap-10">
+    <div class="flex gap-10">
       <div class="flex flex-wrap">
         <div class="overflow-clip rounded-b-3xl">
           <img [src]="profileImage">
@@ -21,7 +46,7 @@
       </div>
     </div>
   </div>
-</div>
+</div>-->
 
 <div class="w-screen flex items-start grid grid-cols-12 px-20">
   <div class="col-span-8">
