@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {NgForOf, NgIf, NgOptimizedImage} from '@angular/common';
+import {NgClass, NgForOf, NgIf, NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NgForOf, NgOptimizedImage, NgIf],
+  imports: [RouterOutlet, NgForOf, NgOptimizedImage, NgIf, NgClass],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -175,7 +175,7 @@ export class AppComponent {
     }
   ];
 
-  featuredBlogs = [
+  featuredBlogs: any = [
     {
       type: `LinkedIn Newsletter`,
       title: `An Innovation Digest`,
@@ -203,7 +203,7 @@ export class AppComponent {
     }
   ];
 
-  featuredProducts = [
+  featuredProducts: any = [
     {
       title: 'Startie',
       description: `Startie will <span class="font-bold">alert</span> you when any of your shopify apps <span class="font-bold">competitor</span> gets a <span class="font-bold">review</span>.`,
