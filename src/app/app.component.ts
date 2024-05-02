@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {NgClass, NgForOf, NgIf, NgOptimizedImage} from '@angular/common';
+import {AnimationOptions, LottieComponent} from 'ngx-lottie';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NgForOf, NgOptimizedImage, NgIf, NgClass],
+  imports: [RouterOutlet, NgForOf, NgOptimizedImage, NgIf, NgClass, LottieComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -13,7 +14,7 @@ export class AppComponent {
   title = 'Sajeer Babu';
 
   name = 'Sajeer';
-  profileDescription = 'I\'m an Associate Technical Architect, A full-time Researcher and more.';
+  profileDescription = 'Associate Technical Architect by profession, Conquering unknown as a tech explorer.';
   profileImage = './assets/images/personal/my-image.png'
 
   experiences = [
@@ -385,4 +386,15 @@ export class AppComponent {
       publishedOn: 'May 2019'
     }
   ];
+
+  downArrowAnimationOptions: AnimationOptions = {
+    path: '/assets/lottie/down-arrow.json',
+  };
+
+  scrollTo(targetId: string) {
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
