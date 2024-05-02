@@ -14,7 +14,7 @@ export class AppComponent {
   title = 'Sajeer Babu';
 
   name = 'Sajeer';
-  profileDescription = 'Associate Technical Architect by profession, Conquering unknown as a tech explorer.';
+  profileDescription = 'Solving things with code and conquering the unknown as a tech explorer.';
   profileImage = './assets/images/personal/my-image.png'
 
   experiences = [
