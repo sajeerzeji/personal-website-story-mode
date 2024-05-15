@@ -206,6 +206,12 @@ export class AppComponent {
 
   featuredProducts: any = [
     {
+      title: 'Post In Light',
+      description: `Post-In-Light generates <span class="font-bold">social media contents</span> for you with the help of <span class="font-bold">AI</span> and the information and referral URLs you give.`,
+      link: 'https://post-in-light.web.app/',
+      releasedOn: 'May 2024'
+    },
+    {
       title: 'Startie',
       description: `Startie will <span class="font-bold">alert</span> you when any of your shopify apps <span class="font-bold">competitor</span> gets a <span class="font-bold">review</span>.`,
       link: 'https://startie-dca92.web.app/',
@@ -224,14 +230,18 @@ export class AppComponent {
       year: '2024',
       items: [
         {
+          title: 'Post In Light',
+          description: `Post-In-Light generates <span class="font-bold">social media contents</span> for you with the help of <span class="font-bold">AI</span> and the information and referral URLs you give.`,
+          link: 'https://post-in-light.web.app/'
+        },
+        {
           title: `Shopify Apps Scraper`,
           description: `This is a <span class="font-bold">python script</span> to <span class="font-bold">scrape</span> and fetch all the shopify apps. I could scrape 9000+ apps.`
         },
         {
           title: `Startie`,
           description: `Startie will <span class="font-bold">alert</span> you when any of your shopify apps <span class="font-bold">competitor</span> gets a <span class="font-bold">review</span>.`,
-          link: 'https://startie-dca92.web.app/',
-          releasedOn: 'Apr 2024'
+          link: 'https://startie-dca92.web.app/'
         }
       ]
     },
