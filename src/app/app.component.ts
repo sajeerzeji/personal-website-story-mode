@@ -14,7 +14,7 @@ export class AppComponent {
   title = 'Sajeer Babu';
 
   name = 'Sajeer';
-  profileDescription = 'Solving things with code and conquering the unknown as a tech explorer.';
+  profileDescription = 'Solving things with code and conquering the unknown as a tech explorer.\nTechnical Architect | Organiser at GDG Kozhikode';
   profileImage = './assets/images/personal/my-image.png'
 
   experiences = [
@@ -173,6 +173,13 @@ export class AppComponent {
         default: './assets/images/icons/social/icon-instagram.svg'
       },
       link: 'https://www.instagram.com/sajeerzeji'
+    },
+    {
+      name: 'GDG',
+      icon: {
+        default: './assets/images/icons/social/icon-gdg.svg'
+      },
+      link: 'https://gdg.community.dev/gdg-kozhikode/'
     }
   ];
 

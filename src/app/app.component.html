@@ -11,10 +11,10 @@
         <div class="w-full text-2xl font-bold">
           Hi I'm {{name}}
         </div>
-        <div class="mt-4">
+        <div class="mt-4 whitespace-pre-line">
           {{profileDescription}}
         </div>
-        <div class="w-full flex gap-4 mt-4">
+        <div class="w-full flex items-center gap-4 mt-4">
           <a class="cursor-pointer" *ngFor="let socialLink of socialLinks" target="_blank" [href]="socialLink.link" [title]="socialLink.name">
             <img [src]="socialLink.icon.default">
           </a>
@@ -24,8 +24,8 @@
   </div>
 
   <div class="absolute right-0 left-0 bottom-0 flex to-remove-on-print">
-    <div class="mx-auto my-10 cursor-pointer" (click)="scrollTo('section_experience')">
-      <ng-lottie [options]="downArrowAnimationOptions" [width]="'50px'"></ng-lottie>
+    <div class="mx-auto my-10 cursor-pointer text-xs" (click)="scrollTo('section_experience')">
+      Scroll down for more
     </div>
   </div>
 </div>
