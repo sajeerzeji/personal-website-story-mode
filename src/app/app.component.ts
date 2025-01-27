@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {NgClass, NgForOf, NgIf, NgOptimizedImage} from '@angular/common';
 import {AnimationOptions, LottieComponent} from 'ngx-lottie';
@@ -10,7 +10,7 @@ import {AnimationOptions, LottieComponent} from 'ngx-lottie';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'Sajeer Babu';
 
   name = 'Sajeer';
@@ -128,56 +128,64 @@ export class AppComponent {
     {
       name: 'Email',
       icon: {
-        default: './assets/images/icons/social/icon-email.svg'
+        default: './assets/images/icons/social/icon-email.svg',
+        dark: './assets/images/icons/social/icon-email.svg',
       },
       link: 'mailto:sajeerzeji44@gmail.com'
     },
     {
       name: 'LinkedIn',
       icon: {
-        default: './assets/images/icons/social/icon-linkedin.svg'
+        default: './assets/images/icons/social/icon-linkedin.svg',
+        dark: './assets/images/icons/social/icon-linkedin.svg',
       },
       link: 'https://www.linkedin.com/in/sajeerzeji/'
     },
     {
       name: 'X',
       icon: {
-        default: './assets/images/icons/social/icon-x.svg'
+        default: './assets/images/icons/social/icon-x.svg',
+        dark: './assets/images/icons/social/icon-x-light.svg',
       },
       link: 'https://twitter.com/sajeer_zeji'
     },
     {
       name: 'Github',
       icon: {
-        default: './assets/images/icons/social/icon-github.svg'
+        default: './assets/images/icons/social/icon-github.svg',
+        dark: './assets/images/icons/social/icon-github-light.svg',
       },
       link: 'https://github.com/sajeerzeji'
     },
     {
       name: 'Medium',
       icon: {
-        default: './assets/images/icons/social/icon-medium.svg'
+        default: './assets/images/icons/social/icon-medium.svg',
+        dark: './assets/images/icons/social/icon-medium-light.svg',
       },
       link: 'https://sajeerzeji44.medium.com/'
     },
     {
       name: 'Buy me A Coffee',
       icon: {
-        default: './assets/images/icons/social/icon-buymeacoffee.svg'
+        default: './assets/images/icons/social/icon-buymeacoffee.svg',
+        dark: './assets/images/icons/social/icon-buymeacoffee.svg',
       },
       link: 'https://buymeacoffee.com/sajeerzeji'
     },
     {
       name: 'Instagram',
       icon: {
-        default: './assets/images/icons/social/icon-instagram.svg'
+        default: './assets/images/icons/social/icon-instagram.svg',
+        dark: './assets/images/icons/social/icon-instagram.svg',
       },
       link: 'https://www.instagram.com/sajeerzeji'
     },
     {
       name: 'GDG',
       icon: {
-        default: './assets/images/icons/social/icon-gdg.svg'
+        default: './assets/images/icons/social/icon-gdg.svg',
+        dark: './assets/images/icons/social/icon-gdg.svg',
       },
       link: 'https://gdg.community.dev/gdg-kozhikode/'
     }
@@ -408,10 +416,26 @@ export class AppComponent {
     path: '/assets/lottie/down-arrow.json',
   };
 
+  ngOnInit() {
+    this.setTheme();
+  }
+
+  setTheme() {
+    document.documentElement.classList
+      .toggle("dark", localStorage.getItem('currentTheme') === "dark");
+  }
+
+  toggleDarkMode(isDark: boolean) {
+    localStorage.setItem('currentTheme', isDark ? 'dark' : 'light');
+    this.setTheme();
+  }
+
   scrollTo(targetId: string) {
     const element = document.getElementById(targetId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   }
+
+  protected readonly localStorage = localStorage;
 }
