@@ -14,14 +14,30 @@ export class AppComponent implements OnInit {
   title = 'Sajeer Babu';
 
   name = 'Sajeer';
-  profileDescription = 'Solving things with code and conquering the unknown as a tech explorer.\nTechnical Architect | Organiser at GDG Kozhikode';
+  profileDescription = 'Solving things with code and conquering the unknown as a tech explorer.\nIBMer | Software Engineer | Software Architect | Organiser at GDG Kozhikode';
   profileImage = './assets/images/personal/my-image.png'
 
   experiences = [
     {
       years: {
-        from: '2021',
+        from: '2025',
         to: 'Present'
+      },
+      description: [
+        {
+          type: 'html',
+          content: `Joined at <a href="https://www.ibm.com/" target="_blank" class="text-blue-600 underline">IBM</a> as a Software Engineer.`
+        },
+        {
+          type: 'html',
+          content: `Primarily working under Open Liberty Language Server.`
+        }
+      ]
+    },
+    {
+      years: {
+        from: '2021',
+        to: '2025'
       },
       description: [
         {
