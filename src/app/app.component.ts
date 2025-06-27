@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   title = 'Sajeer Babu';
 
   name = 'Sajeer';
-  profileDescription = 'Solving things with code and conquering the unknown as a tech explorer.\nIBMer | Software Engineer | Software Architect \nOrganiser at GDG Kozhikode';
+  profileDescription = 'Building scalable solutions and exploring cutting-edge technologies to solve complex problems.\n\n Software Engineer & Architect with 8+ years of experience. \n\n Microservices, Serverless, Web Apps, AI Integrations \n\n Organiser at GDG Kozhikode';
   profileImage = './assets/images/personal/my-image.png'
 
   experiences = [
@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
         },
         {
           type: 'html',
-          content: `Primarily working under Open Liberty Language Server.`
+          content: `Primarily working on Developer Experience under IBM Websphere.`
         }
       ]
     },
@@ -237,16 +237,20 @@ export class AppComponent implements OnInit {
 
   featuredProducts: any = [
     {
+      title: 'Lyticspend',
+      description: `An open source and no-cloud anti-corporate expense tracker that lets you track your <span class="font-bold">expense</span> and <span class="font-bold">income</span> in a <span class="font-bold">simple</span> and <span class="font-bold">secure</span> way.`,
+      link: 'https://lyticspend.online/',
+      releasedOn: 'Jun 2025'
+    },
+    {
       title: 'Post In Light',
       description: `Post-In-Light generates <span class="font-bold">social media contents</span> for you with the help of <span class="font-bold">AI</span> and the information and referral URLs you give.`,
-      link: 'https://post-in-light.web.app/',
-      releasedOn: 'May 2024'
+      releasedOn: 'May 2024 • Sunsetted'
     },
     {
       title: 'Startie',
       description: `Startie will <span class="font-bold">alert</span> you when any of your shopify apps <span class="font-bold">competitor</span> gets a <span class="font-bold">review</span>.`,
-      link: 'https://startie-dca92.web.app/',
-      releasedOn: 'Apr 2024'
+      releasedOn: 'Apr 2024 • Sunsetted'
     },
     {
       title: 'Helloii',
@@ -258,20 +262,30 @@ export class AppComponent implements OnInit {
 
   petProjectsSets: any = [
     {
+      year: '205',
+      items: [
+        {
+          title: 'Lyticspend',
+          description: `Lyticspend is a free and open source expense tracker. It is a simple and secure expense tracker that allows you to track your expenses and incomes in a simple and secure way.`,
+          link: 'https://lyticspend.online/'
+        }
+      ]
+    },
+    {
       year: '2024',
       items: [
         {
           title: 'Post In Light',
-          description: `Post-In-Light generates <span class="font-bold">social media contents</span> for you with the help of <span class="font-bold">AI</span> and the information and referral URLs you give.`,
+          description: `Post-In-Light generates <span class="font-bold">social media contents</span> for you with the help of <span class="font-bold">AI</span> and the information and referral URLs you give.<br/><span class="font-bold">Sunsetted</span>`,
           link: 'https://post-in-light.web.app/'
         },
         {
           title: `Shopify Apps Scraper`,
-          description: `This is a <span class="font-bold">python script</span> to <span class="font-bold">scrape</span> and fetch all the shopify apps. I could scrape 9000+ apps.`
+          description: `This is a <span class="font-bold">python script</span> to <span class="font-bold">scrape</span> and fetch all the shopify apps. I could scrape 9000+ apps.<br/><span class="font-bold">Sunsetted</span>`
         },
         {
           title: `Startie`,
-          description: `Startie will <span class="font-bold">alert</span> you when any of your shopify apps <span class="font-bold">competitor</span> gets a <span class="font-bold">review</span>.`,
+          description: `Startie will <span class="font-bold">alert</span> you when any of your shopify apps <span class="font-bold">competitor</span> gets a <span class="font-bold">review</span>.<br/><span class="font-bold">Sunsetted</span>`,
           link: 'https://startie-dca92.web.app/'
         }
       ]
@@ -357,6 +371,18 @@ export class AppComponent implements OnInit {
 
   highlightProjects: any = [
     {
+      title: `Lyticspend`,
+      description: `<span class="font-bold">Simple free and open source expense tracker</span> that allows you to track your expenses and incomes in a simple and secure way.`,
+      link: 'https://helloii.com/',
+      releasedOn: 'Oct 2024'
+    },
+    {
+      title: `Helloii`,
+      description: `<span class="font-bold">AI Sales Person</span> for shopify stores. This will let the store customers <span class="font-bold">talk with an AI</span> about the products.`,
+      link: 'https://helloii.com/',
+      releasedOn: 'Oct 2024'
+    },
+    {
       title: `Enablement OS`,
       description: `<span class="font-bold">Frnd.ai</span> project have been changed to <span class="font-bold">Enablement OS</span>, with a slight deviation, eventually we <span class="font-bold">sunsetted</span> the project due to some unintentional issues came in.`,
       link: 'https://frnd.ai/manifesto'
@@ -370,12 +396,6 @@ export class AppComponent implements OnInit {
       title: `Frnd.ai Chrome Extension`,
       description: `A <span class="font-bold">chrome extension</span> which will be used to share contents and take analytics, this was working with Gmail, Outlook, Hubspot, Salesforce and LinkedIn, but eventually we <span class="font-bold">sunsetted</span> the project.`,
       link: 'https://frnd.ai'
-    },
-    {
-      title: `Helloii`,
-      description: `<span class="font-bold">AI Sales Person</span> for shopify stores. This will let the store customers <span class="font-bold">talk with an AI</span> about the products.`,
-      link: 'https://helloii.com/',
-      releasedOn: 'Oct 2024'
     }
   ];
 
@@ -425,6 +445,27 @@ export class AppComponent implements OnInit {
       title: 'Create React Web Application',
       link: 'https://medium.com/@sajeerzeji44/create-react-js-application-43ff4a0fb31',
       publishedOn: 'May 2019'
+    }
+  ];
+
+  talks: any = [
+    {
+      year: '2025',
+      talks: [
+        {
+          title: 'Code for Future - A session for Aifer Education Team',
+          description: 'From Planing to Scaling - A complete overview'
+        }
+      ]
+    },
+    {
+      year: '2024',
+      talks: [
+        {
+          title: 'Coding up a business - A session for Edapt Technology team',
+          description: 'Transforming business ideas into tech solutions - A practical insight'
+        }
+      ]
     }
   ];
 
