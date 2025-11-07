@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
   }
 
   name = 'Sajeer';
-  profileDescription = 'Building scalable solutions and exploring cutting-edge technologies to solve complex problems.\n\n Software Engineer & Architect with 8+ years of experience. \n\n Microservices, Serverless, Web Apps, AI Integrations \n\n Organiser at GDG Kozhikode';
+  profileDescription = 'Building the future, one line of code at a time.\n\nSoftware Engineer & Architect at IBM with 8+ years crafting scalable solutions.\n\nFrom microservices to AI-powered apps, I turn complex problems into elegant systems.\n\nOrganizer at GDG Kozhikode | Open Source Enthusiast | AI Integration Specialist';
   profileImage = './assets/images/personal/my-image.png'
 
   experiences = [
@@ -34,95 +34,43 @@ export class AppComponent implements OnInit {
       description: [
         {
           type: 'html',
-          content: `Joined at <a href="https://www.ibm.com/" target="_blank" class="text-blue-600 underline">IBM</a> as a Software Engineer.`
+          content: `Joined <a href="https://www.ibm.com/" target="_blank" class="text-blue-600 underline">IBM</a> as a Software Engineer.`
         },
         {
           type: 'html',
-          content: `Primarily working on Developer Experience under IBM Websphere.`
-        }
-      ]
-    },
-    {
-      years: {
-        from: '2021',
-        to: '2025'
-      },
-      description: [
-        {
-          type: 'html',
-          content: `Promoted as an Associate Technical Architect at <a href="https://retailcloud.com/" target="_blank" class="text-blue-600 underline">retailcloud</a>.`
+          content: `Working on IBM Runtimes projects, focusing on Developer Experience and tooling.`
         },
         {
           type: 'html',
-          content: `I was responsible for both designing new products from scratch and ensuring that all projects adhered to established architectural policies.`
-        },
-        {
-          type: 'html',
-          content: `One such project was the <span class="font-bold">Vendor Portal</span>, which streamlined the process of sending RFID tag printing requests to vendors. This system eliminated the need for manual tag printing, ensuring that products arrived at stores with pre-applied RFID tags. Another project I spearheaded was the <span class="font-bold">RFID-Based Inventory Management App</span>. This innovative app utilizes <span class="font-bold">RFID technology</span> to scan entire inventories in seconds, drastically reducing the time and manpower required for traditional inventory checks. These projects not only improved operational efficiency but also attracted a significant number of new customers to the retailcloud ecosystem.`
-        }
-      ]
-    },
-    {
-      years: {
-        from: '2020',
-        to: '2021'
-      },
-      description: [
-        {
-          type: 'html',
-          content: `Role changed to Lead Software Engineer at <a href="https://retailcloud.com/" target="_blank" class="text-blue-600 underline">retailcloud</a>.`
-        },
-        {
-          type: 'html',
-          content: `As my team grew from 6 to 10 people, my role evolved to encompass both leadership and technical expertise. My focus shifted to a 50/50 split, dedicating half my time to managing the team, planning and executing sprints, and ensuring smooth project delivery. The other half involved tackling complex tasks requiring experience and focused attention.`
-        },
-        {
-          type: 'html',
-          content: `During this time, our company, RetailCloud, implemented a new restaurant management application called <a href="https://retailcloud.com/partners/tikt.html" target="_blank" class="text-blue-600 underline">Tikt</a>. To complement Tikt, I spearheaded the development of a brand new console portal project named <span class="font-bold">Restaurant Console</span>. Built from the ground up, Restaurant Console acts as a centralized hub for managing all <span class="font-bold">restaurant-related processes</span> within the Tikt ecosystem.`
-        }
-      ]
-    },
-    {
-      years: {
-        from: '2019',
-        to: '2020'
-      },
-      description: [
-        {
-          type: 'html',
-          content: `Became Senior Software Engineer at <a href="https://retailcloud.com/" target="_blank" class="text-blue-600 underline">retailcloud</a>.`
-        },
-        {
-          type: 'html',
-          content: `My focus here was on developing microservices using <span class="font-bold">Spring Boot</span>. I played a key role in building an <span class="font-bold">OAuth2</span> authorization service and several other microservices from scratch. These microservices seamlessly integrated with the authorization service.`
-        },
-        {
-          type: 'html',
-          content: `To streamline development and reduce code duplication, I created an internal <span class="font-bold">SDK</span>. This SDK encapsulated common functionalities, including pre-configured authorization logic, eliminating the need to rewrite boilerplate code across all microservices.`
-        },
-        {
-          type: 'html',
-          content: `Furthermore, I implemented <span class="font-bold">gRPC</span> within the SDK to enable efficient communication between the microservices, ensuring a smooth and cohesive system.`
+          content: `Contributing to open source projects including <a href="https://github.com/OpenLiberty/liberty-language-server" target="_blank" class="text-blue-600 underline">Open Liberty Config Language Service</a>, <a href="https://github.com/OpenLiberty/ci.maven" target="_blank" class="text-blue-600 underline">Liberty Maven Plugin</a>, <a href="https://github.com/OpenLiberty/ci.gradle" target="_blank" class="text-blue-600 underline">Liberty Gradle Plugin</a>, and YAML Language Service for enhanced developer productivity.`
         }
       ]
     },
     {
       years: {
         from: '2018',
-        to: '2019'
+        to: '2025'
       },
       description: [
         {
           type: 'html',
-          content: `Joined at <a href="https://retailcloud.com/" target="_blank" class="text-blue-600 underline">retailcloud</a> as a Software Engineer.`
+          content: `Joined <a href="https://retailcloud.com/" target="_blank" class="text-blue-600 underline">retailcloud</a> as a Software Engineer and progressed to <span class="font-bold">Associate Technical Architect</span> through consistent delivery and technical leadership.`
         },
         {
           type: 'html',
-          content: `At this phase, my primary focus was in maintaining and enhancing their <span class="font-bold">legacy projects</span>, excluding mobile projects. This involved significant <span class="font-bold">code upgrades</span>, ensuring compatibility with the latest technologies.`
+          content: `<span class="font-bold">Career Progression:</span> Software Engineer → Senior Software Engineer → Lead Software Engineer → Associate Technical Architect`
         },
         {
           type: 'html',
-          content: `In the absence of a dedicated <span class="font-bold">DevOps</span> team, I took on these responsibilities as well. I handled <span class="font-bold">deployments</span>, <span class="font-bold">log extractions</span>, and other tasks. To streamline these processes, I even went on to set up a <span class="font-bold">DevOps pipeline for automated deployments</span>.`
+          content: `<span class="font-bold">Key Projects:</span> Built <span class="font-bold">API Platform</span> with multiple microservices, <span class="font-bold">New API Platform</span> from scratch for RFID solutions, <span class="font-bold">Console Portal</span> (now the company's core back office), <span class="font-bold">RFID Inventory Management App</span>, <span class="font-bold">Vendor Portal</span>, <span class="font-bold">Restaurant Console</span> for <a href="https://retailcloud.com/partners/tikt.html" target="_blank" class="text-blue-600 underline">Tikt</a>, <span class="font-bold">OAuth2 Authorization Service</span>, and internal <span class="font-bold">SDK with gRPC</span>.`
+        },
+        {
+          type: 'html',
+          content: `<span class="font-bold">Leadership:</span> Led team of 10 engineers, architected and built multiple platforms from scratch, ensured architectural compliance across all projects, and established DevOps practices.`
+        },
+        {
+          type: 'html',
+          content: `<span class="font-bold">Technologies:</span> Java, Spring Boot, Angular, TypeScript, NestJS, Node.js, JavaScript, Python, Microservices, Serverless, OAuth2, gRPC, DevOps, CI/CD, RFID`
         }
       ]
     },
@@ -134,15 +82,15 @@ export class AppComponent implements OnInit {
       description: [
         {
           type: 'html',
-          content: `Joined as a Junior Software Engineer at <a href="https://www.m2hinfotech.com/" target="_blank" class="text-blue-600 underline">M2H Infotech LLP</a>.`
+          content: `Started career as Junior Software Engineer at <a href="https://www.m2hinfotech.com/" target="_blank" class="text-blue-600 underline">M2H Infotech LLP</a>.`
         },
         {
           type: 'html',
-          content: `This period was a challenging but rewarding learning experience. I honed my skills working on bot development projects for several banking clients in the UAE, specifically focusing on <span class="font-bold">WPS and FTS</span> platforms. My responsibilities included rapid development, deployment, bug fixing, and customer support..`
+          content: `Developed bot automation for UAE banking clients on <span class="font-bold">WPS and FTS</span> platforms, handling full development lifecycle.`
         },
         {
           type: 'html',
-          content: `A highlight of this phase was a three-month on-site visit at a major UAE banking client.  Since banking projects are often deployed offline, this visit was crucial for implementing enhancements and ensuring a smooth rollout for the <span class="font-bold">banking projects</span>.`
+          content: `Completed 3-month on-site deployment at major UAE bank for offline <span class="font-bold">banking system</span> implementation.`
         }
       ]
     }
@@ -215,66 +163,16 @@ export class AppComponent implements OnInit {
     }
   ];
 
-  featuredBlogs: any = [
-    {
-      type: `LinkedIn Newsletter`,
-      title: `An Innovation Digest`,
-      link: 'https://www.linkedin.com/newsletters/7038592163324039168/',
-      items: [
-        {
-          title: `Level Up Your No-Code Game: Introducing The No-Code Leaderboard!`,
-          shortDescription: `No-Code Developers, Assemble!...`,
-          footer: `Author: Sajeer Babu`,
-          link: 'https://www.linkedin.com/pulse/level-up-your-no-code-game-introducing-leaderboard-sajeer-babu-hvpic/?trackingId=z8C2xWKqQHmOkuEWJ6dNKQ%3D%3D'
-        },
-        {
-          title: `Stimch: Affordable and Effective Marketing Automation`,
-          shortDescription: `Stimch is a game-changing marketi...`,
-          footer: `Author: Sajeer Babu`,
-          link: 'https://www.linkedin.com/pulse/stimch-affordable-effective-marketing-automation-sajeer-babu-ooioc/?trackingId=Za6fj3t2QMW2kKNlNXWCVA%3D%3D'
-        },
-        {
-          title: `Optimize Your Workflow with Ayraa: A Practical Knowledge Assistant`,
-          shortDescription: `Optimize your work routine with Ay...`,
-          footer: `Author: Sajeer Babu`,
-          link: 'https://www.linkedin.com/pulse/stimch-affordable-effective-marketing-automation-sajeer-babu-ooioc/?trackingId=Za6fj3t2QMW2kKNlNXWCVA%3D%3D'
-        }
-      ]
-    }
-  ];
-
-  featuredProducts: any = [
-    {
-      title: 'Lyticspend',
-      description: `An open source and no-cloud anti-corporate expense tracker that lets you track your <span class="font-bold">expense</span> and <span class="font-bold">income</span> in a <span class="font-bold">simple</span> and <span class="font-bold">secure</span> way.`,
-      link: 'https://lyticspend.online/',
-      releasedOn: 'Jun 2025'
-    },
-    {
-      title: 'Post In Light',
-      description: `Post-In-Light generates <span class="font-bold">social media contents</span> for you with the help of <span class="font-bold">AI</span> and the information and referral URLs you give.`,
-      releasedOn: 'May 2024 • Sunsetted'
-    },
-    {
-      title: 'Startie',
-      description: `Startie will <span class="font-bold">alert</span> you when any of your shopify apps <span class="font-bold">competitor</span> gets a <span class="font-bold">review</span>.`,
-      releasedOn: 'Apr 2024 • Sunsetted'
-    },
-    {
-      title: 'Helloii',
-      description: `<span class="font-bold">AI Sales Person</span> for shopify stores. This will let the store customers <span class="font-bold">talk with an AI</span> about the products.`,
-      link: 'https://helloii.com/',
-      releasedOn: 'October 2024'
-    }
-  ];
+  // Removed - replaced with simple link in newsLetters section
+  // featuredProducts removed - was redundant with highlightProjects and petProjectsSets
 
   petProjectsSets: any = [
     {
-      year: '205',
+      year: '2025',
       items: [
         {
           title: 'Lyticspend',
-          description: `Lyticspend is a free and open source expense tracker. It is a simple and secure expense tracker that allows you to track your expenses and incomes in a simple and secure way.`,
+          description: `Free and open source expense tracker. Track expenses and incomes in a simple, secure way with no cloud dependency.`,
           link: 'https://lyticspend.online/'
         }
       ]
@@ -283,18 +181,8 @@ export class AppComponent implements OnInit {
       year: '2024',
       items: [
         {
-          title: 'Post In Light',
-          description: `Post-In-Light generates <span class="font-bold">social media contents</span> for you with the help of <span class="font-bold">AI</span> and the information and referral URLs you give.<br/><span class="font-bold">Sunsetted</span>`,
-          link: 'https://post-in-light.web.app/'
-        },
-        {
-          title: `Shopify Apps Scraper`,
-          description: `This is a <span class="font-bold">python script</span> to <span class="font-bold">scrape</span> and fetch all the shopify apps. I could scrape 9000+ apps.<br/><span class="font-bold">Sunsetted</span>`
-        },
-        {
-          title: `Startie`,
-          description: `Startie will <span class="font-bold">alert</span> you when any of your shopify apps <span class="font-bold">competitor</span> gets a <span class="font-bold">review</span>.<br/><span class="font-bold">Sunsetted</span>`,
-          link: 'https://startie-dca92.web.app/'
+          title: 'Shopify Apps Scraper',
+          description: `Python script to scrape and analyze 9000+ Shopify apps for market research and competitive analysis.`
         }
       ]
     },
@@ -302,76 +190,48 @@ export class AppComponent implements OnInit {
       year: '2023',
       items: [
         {
-          title: `Helloii`,
-          description: `<span class="font-bold">AI Sales Person</span> for shopify stores. This will let the store customers <span class="font-bold">talk with an AI</span> about the products.`,
-          link: 'https://helloii.com/',
-          releasedOn: 'Oct 2024'
-        },
-        {
-          title: `Yourslash`,
-          description: `Initiated a new project just like <span class="font-bold">oSlash</span> but with more features.`,
+          title: 'Yourslash',
+          description: `Productivity tool inspired by oSlash - create custom shortcuts for frequently used links and resources.`,
           link: 'https://yourslash.com/'
         },
         {
-          title: `Nysaclan`,
-          description: `Formed a team of people to experiment and implement new things.`,
+          title: 'Nysaclan',
+          description: `Innovation team focused on experimenting with emerging technologies and building proof-of-concepts.`,
           link: 'https://nysaclan.com/'
         },
         {
-          title: `ThinkrGPT`,
-          description: `A <span class="font-bold">ChatGPT-Like</span> web app, which will learn about the user at first and respond to every queries with <span class="font-bold">personalized response</span>. <span class="font-bold">Sunsetted</span> due to high infra structure costs.`,
-        },
-        {
-          title: `OnPageGPT Chrome Extension`,
-          description: `An <span class="font-bold">interactive AI tool</span> on every web page, where we can query anything about the visited website. <span class="font-bold">Sunsetted</span> due to high infra structure costs.`,
-        },
-        {
-          title: `Multi Tenant API Platform`,
-          description: `A <span class="font-bold">multi tenant</span> API platform in <span class="font-bold">Python Django</span>, which integrated with almost all openai APIs also with token based authentication. Development <span class="font-bold">discontinued</span> due to lack of time to spend.`,
-        },
-        {
-          title: `Enablement OS`,
-          description: `<span class="font-bold">Frnd.ai</span> project have been changed to <span class="font-bold">Enablement OS</span>, with a slight deviation, eventually we <span class="font-bold">sunsetted</span> the project due to some unintentional issues came in.`,
-          link: 'https://frnd.ai/manifesto'
-        },
-        {
-          title: `Soul Chrome Extension`,
-          description: `A <span class="font-bold">chrome extension</span> that will let us take synced notes on every tabs we open.`,
+          title: 'Soul Chrome Extension',
+          description: `Chrome extension for synced note-taking across all browser tabs, enabling seamless research workflows.`,
           link: 'https://soul.frnd.ai/'
-        },
-        {
-          title: `Helloii Chrome Extension`,
-          description: `A <span class="font-bold">chrome extension</span> that will let us query chatgpt prompt on every tab we open.`,
-          link: 'https://chrome.helloii.com/'
-        },
+        }
       ]
     },
     {
       year: '2022',
       items: [
         {
-          title: `Frnd.ai`,
-          description: `A tool to sales people for <span class="font-bold">Sales Enablement</span> by Content Organization and Sharing with Analytics with a help of an <span class="font-bold">AI model</span>. Eventually changed the idea to Enablement OS and <span class="font-bold">sunsetted</span>.`,
+          title: 'Frnd.ai',
+          description: `Sales Enablement platform with AI-powered content organization, sharing, and analytics for sales teams.`,
           link: 'https://frnd.ai'
         },
         {
-          title: `Frnd.ai Chrome Extension`,
-          description: `A <span class="font-bold">chrome extension</span> which will be used to share contents and take analytics, this was working with <span class="font-bold">Gmail, Outlook, Hubspot, Salesforce and LinkedIn</span>, but eventually we <span class="font-bold">sunsetted</span> the project.`,
+          title: 'Frnd.ai Chrome Extension',
+          description: `Chrome extension for content sharing and analytics across Gmail, Outlook, Hubspot, Salesforce, and LinkedIn.`,
           link: 'https://frnd.ai'
-        },
+        }
       ]
     },
     {
       year: '2021',
       items: [
         {
-          title: `CSRF Validator`,
-          description: `An npm <span class="font-bold">library</span> which can be used in <span class="font-bold">Node.Js</span> or <span class="font-bold">NestJs</span> projects to protect API requests with <span class="font-bold">CSRF token</span>.`,
+          title: 'CSRF Validator',
+          description: `NPM library for Node.js and NestJS to protect API requests with CSRF token validation.`,
           link: 'https://www.npmjs.com/package/csrf-validator'
         },
         {
-          title: `Multi Tenant Microservices`,
-          description: `This is a <span class="font-bold">multi tenant microservices</span> API platform built in <span class="font-bold">Spring Boot</span> along with <span class="font-bold">postgresql</span> and <span class="font-bold">flywaydb</span>.`
+          title: 'Multi Tenant Microservices',
+          description: `Multi-tenant microservices API platform built with Spring Boot, PostgreSQL, and FlywayDB for database versioning.`
         }
       ]
     }
@@ -380,30 +240,18 @@ export class AppComponent implements OnInit {
   highlightProjects: any = [
     {
       title: `Lyticspend`,
-      description: `<span class="font-bold">Simple free and open source expense tracker</span> that allows you to track your expenses and incomes in a simple and secure way.`,
-      link: 'https://helloii.com/',
-      releasedOn: 'Oct 2024'
+      description: `<span class="font-bold">Open source expense tracker</span> - Privacy-first financial management with no cloud dependency.`,
+      link: 'https://lyticspend.online/'
     },
     {
-      title: `Helloii`,
-      description: `<span class="font-bold">AI Sales Person</span> for shopify stores. This will let the store customers <span class="font-bold">talk with an AI</span> about the products.`,
-      link: 'https://helloii.com/',
-      releasedOn: 'Oct 2024'
+      title: `Yourslash`,
+      description: `<span class="font-bold">Productivity shortcuts</span> - Custom aliases for frequently accessed links and resources.`,
+      link: 'https://yourslash.com/'
     },
     {
-      title: `Enablement OS`,
-      description: `<span class="font-bold">Frnd.ai</span> project have been changed to <span class="font-bold">Enablement OS</span>, with a slight deviation, eventually we <span class="font-bold">sunsetted</span> the project due to some unintentional issues came in.`,
-      link: 'https://frnd.ai/manifesto'
-    },
-    {
-      title: `Frnd.ai`,
-      description: `A tool to sales people for <span class="font-bold">Sales Enablement</span> by Content Organization and Sharing with Analytics with a help of an <span class="font-bold">AI model</span>. Eventually changed the idea to Enablement OS and <span class="font-bold">sunsetted</span>.`,
-      link: 'https://frnd.ai'
-    },
-    {
-      title: `Frnd.ai Chrome Extension`,
-      description: `A <span class="font-bold">chrome extension</span> which will be used to share contents and take analytics, this was working with Gmail, Outlook, Hubspot, Salesforce and LinkedIn, but eventually we <span class="font-bold">sunsetted</span> the project.`,
-      link: 'https://frnd.ai'
+      title: `CSRF Validator`,
+      description: `<span class="font-bold">Security library</span> - NPM package for CSRF protection in Node.js and NestJS applications.`,
+      link: 'https://www.npmjs.com/package/csrf-validator'
     }
   ];
 
@@ -461,8 +309,12 @@ export class AppComponent implements OnInit {
       year: '2025',
       talks: [
         {
-          title: 'Code for Future - A session for Aifer Education Team',
-          description: 'From Planing to Scaling - A complete overview'
+          title: 'Building Together - How AI Become your Perfect Coding Team mate',
+          description: 'A session for Edapt Team'
+        },
+        {
+          title: 'Code for Future - From Planing to Scaling - A complete overview',
+          description: 'A session for Aifer Education Team'
         }
       ]
     },
@@ -470,8 +322,8 @@ export class AppComponent implements OnInit {
       year: '2024',
       talks: [
         {
-          title: 'Coding up a business - A session for Edapt Technology team',
-          description: 'Transforming business ideas into tech solutions - A practical insight'
+          title: 'Coding up a business - Transforming business ideas into tech solutions - A practical insight',
+          description: 'A session for Edapt Technology team'
         }
       ]
     }
