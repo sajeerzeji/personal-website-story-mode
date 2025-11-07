@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sajeerzeji-98ac5.web.app/sitemap.xml

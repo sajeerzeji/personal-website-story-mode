@@ -1,17 +1,25 @@
-import {Component, OnInit} from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import {NgClass, NgForOf, NgIf, NgOptimizedImage} from '@angular/common';
-import {AnimationOptions, LottieComponent} from 'ngx-lottie';
+import {Component, OnInit, Inject, PLATFORM_ID} from '@angular/core';
+import {NgClass, NgForOf, NgIf, isPlatformBrowser} from '@angular/common';
+import {AnimationOptions} from 'ngx-lottie';
+import { SeoService } from './services/seo.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NgForOf, NgOptimizedImage, NgIf, NgClass, LottieComponent],
+  imports: [NgForOf, NgIf, NgClass],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
   title = 'Sajeer Babu';
+  isBrowser: boolean;
+
+  constructor(
+    private seoService: SeoService,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {
+    this.isBrowser = isPlatformBrowser(this.platformId);
+  }
 
   name = 'Sajeer';
   profileDescription = 'Building scalable solutions and exploring cutting-edge technologies to solve complex problems.\n\n Software Engineer & Architect with 8+ years of experience. \n\n Microservices, Serverless, Web Apps, AI Integrations \n\n Organiser at GDG Kozhikode';
@@ -475,24 +483,69 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.setTheme();
+    this.initializeSEO();
+  }
+
+  initializeSEO() {
+    // Update meta tags
+    this.seoService.updateMetaTags({
+      title: 'Sajeer Babu - Software Engineer & Architect | Portfolio',
+      description: 'Building scalable solutions and exploring cutting-edge technologies. Software Engineer & Architect with 8+ years of experience in Microservices, Serverless, Web Apps, and AI Integrations. Organiser at GDG Kozhikode.',
+      url: 'https://sajeerzeji-98ac5.web.app',
+      image: 'https://sajeerzeji-98ac5.web.app/assets/images/personal/my-image.png',
+      type: 'website',
+      keywords: [
+        'Sajeer Babu',
+        'Software Engineer',
+        'Software Architect',
+        'IBM',
+        'RetailCloud',
+        'Microservices',
+        'Serverless',
+        'Angular Developer',
+        'Spring Boot',
+        'Web Development',
+        'AI Integration',
+        'GDG Kozhikode',
+        'Full Stack Developer',
+        'Cloud Architecture',
+        'RFID Technology',
+        'OAuth2',
+        'Technical Leadership',
+        'Lyticspend',
+        'Helloii',
+        'Portfolio'
+      ]
+    });
+
+    // Add structured data for better search engine understanding
+    this.seoService.createCombinedStructuredData();
   }
 
   setTheme() {
-    document.documentElement.classList
-      .toggle("dark", localStorage.getItem('currentTheme') === "dark");
-  }
-
-  toggleDarkMode(isDark: boolean) {
-    localStorage.setItem('currentTheme', isDark ? 'dark' : 'light');
-    this.setTheme();
-  }
-
-  scrollTo(targetId: string) {
-    const element = document.getElementById(targetId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    if (this.isBrowser) {
+      document.documentElement.classList
+        .toggle("dark", localStorage.getItem('currentTheme') === "dark");
     }
   }
 
-  protected readonly localStorage = localStorage;
+  toggleDarkMode(isDark: boolean) {
+    if (this.isBrowser) {
+      localStorage.setItem('currentTheme', isDark ? 'dark' : 'light');
+      this.setTheme();
+    }
+  }
+
+  getCurrentTheme(): string {
+    return this.isBrowser ? (localStorage.getItem('currentTheme') || 'light') : 'light';
+  }
+
+  scrollTo(targetId: string) {
+    if (this.isBrowser) {
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }
 }
