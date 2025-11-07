@@ -54,23 +54,23 @@ export class AppComponent implements OnInit {
       description: [
         {
           type: 'html',
-          content: `Joined <a href="https://retailcloud.com/" target="_blank" class="text-blue-600 underline">retailcloud</a> as a Software Engineer and progressed to <span class="font-bold">Associate Technical Architect</span> through consistent delivery and technical leadership.`
+          content: `<span class="font-bold">7-year journey</span> at <a href="https://retailcloud.com/" target="_blank" class="text-blue-600 underline">retailcloud</a>: Software Engineer → Senior → Lead → Associate Technical Architect`
         },
         {
           type: 'html',
-          content: `<span class="font-bold">Career Progression:</span> Software Engineer → Senior Software Engineer → Lead Software Engineer → Associate Technical Architect`
+          content: `<span class="font-bold">Platform Development:</span><br/>
+            • Built <span class="font-bold">Console Portal</span> from scratch (now company's core back office)<br/>
+            • Architected <span class="font-bold">API Platform</span> and <span class="font-bold">New API Platform</span> for RFID solutions<br/>
+            • Developed <span class="font-bold">Restaurant Console</span> for <a href="https://retailcloud.com/partners/tikt.html" target="_blank" class="text-blue-600 underline">Tikt</a> operations<br/>
+            • Created <span class="font-bold">RFID Inventory Management App</span> reducing scan time by 95%`
         },
         {
           type: 'html',
-          content: `<span class="font-bold">Key Projects:</span> Built <span class="font-bold">API Platform</span> with multiple microservices, <span class="font-bold">New API Platform</span> from scratch for RFID solutions, <span class="font-bold">Console Portal</span> (now the company's core back office), <span class="font-bold">RFID Inventory Management App</span>, <span class="font-bold">Vendor Portal</span>, <span class="font-bold">Restaurant Console</span> for <a href="https://retailcloud.com/partners/tikt.html" target="_blank" class="text-blue-600 underline">Tikt</a>, <span class="font-bold">OAuth2 Authorization Service</span>, and internal <span class="font-bold">SDK with gRPC</span>.`
+          content: `<span class="font-bold">Technical Leadership:</span> Led 10 engineers, established DevOps practices, built OAuth2 service & gRPC SDK`
         },
         {
           type: 'html',
-          content: `<span class="font-bold">Leadership:</span> Led team of 10 engineers, architected and built multiple platforms from scratch, ensured architectural compliance across all projects, and established DevOps practices.`
-        },
-        {
-          type: 'html',
-          content: `<span class="font-bold">Technologies:</span> Java, Spring Boot, Angular, TypeScript, NestJS, Node.js, JavaScript, Python, Microservices, Serverless, OAuth2, gRPC, DevOps, CI/CD, RFID`
+          content: `<span class="font-bold">Tech Stack:</span> Java, Spring Boot, Angular, TypeScript, NestJS, Node.js, Python, Microservices, OAuth2, gRPC`
         }
       ]
     },
