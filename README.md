@@ -120,7 +120,7 @@ Modify SEO settings in `src/app/services/seo.service.ts`:
 - Keywords
 
 ### Update URLs
-Replace `https://sajeerzeji-98ac5.web.app` with your domain in:
+Replace `https://sajeerzeji.com` with your domain in:
 - `src/app/services/seo.service.ts`
 - `src/index.html` (canonical URL)
 - `src/sitemap.xml`

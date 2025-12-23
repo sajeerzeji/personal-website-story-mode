@@ -21,8 +21,8 @@ export class SeoService {
   private defaultConfig: SEOConfig = {
     title: 'Sajeer Babu - Software Engineer & Architect',
     description: 'Building scalable solutions and exploring cutting-edge technologies. Software Engineer & Architect with 8+ years of experience in Microservices, Serverless, Web Apps, and AI Integrations. Organiser at GDG Kozhikode.',
-    image: 'https://sajeerzeji-98ac5.web.app/assets/images/personal/my-image.png',
-    url: 'https://sajeerzeji-98ac5.web.app',
+    image: 'https://sajeerzeji.com/assets/images/personal/my-image.png',
+    url: 'https://sajeerzeji.com',
     type: 'website',
     author: 'Sajeer Babu',
     keywords: [
@@ -130,8 +130,8 @@ export class SeoService {
       '@type': 'Person',
       name: 'Sajeer Babu',
       alternateName: 'Sajeer Zeji',
-      url: 'https://sajeerzeji-98ac5.web.app',
-      image: 'https://sajeerzeji-98ac5.web.app/assets/images/personal/my-image.png',
+      url: 'https://sajeerzeji.com',
+      image: 'https://sajeerzeji.com/assets/images/personal/my-image.png',
       jobTitle: 'Software Engineer',
       worksFor: {
         '@type': 'Organization',
@@ -170,7 +170,7 @@ export class SeoService {
       '@context': 'https://schema.org',
       '@type': 'WebSite',
       name: 'Sajeer Babu - Portfolio',
-      url: 'https://sajeerzeji-98ac5.web.app',
+      url: 'https://sajeerzeji.com',
       description: 'Personal portfolio and professional timeline of Sajeer Babu, Software Engineer & Architect',
       author: {
         '@type': 'Person',

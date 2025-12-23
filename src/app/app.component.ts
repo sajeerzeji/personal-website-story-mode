@@ -34,15 +34,11 @@ export class AppComponent implements OnInit {
       description: [
         {
           type: 'html',
-          content: `Joined <a href="https://www.ibm.com/" target="_blank" class="text-blue-600 underline">IBM</a> as a Software Engineer.`
+          content: `At <a href="https://www.ibm.com/" target="_blank" class="text-blue-600 underline">IBM</a> I work on runtime and developer tooling, with a focus on how systems behave under real workloads and how changes propagate through large codebases.`
         },
         {
           type: 'html',
-          content: `Working on IBM Runtimes projects, focusing on Developer Experience and tooling.`
-        },
-        {
-          type: 'html',
-          content: `Contributing to open source projects including <a href="https://github.com/OpenLiberty/liberty-language-server" target="_blank" class="text-blue-600 underline">Open Liberty Config Language Service</a>, <a href="https://github.com/OpenLiberty/ci.maven" target="_blank" class="text-blue-600 underline">Liberty Maven Plugin</a>, <a href="https://github.com/OpenLiberty/ci.gradle" target="_blank" class="text-blue-600 underline">Liberty Gradle Plugin</a>, and YAML Language Service for enhanced developer productivity.`
+          content: `Most of this work sits at the boundary between configuration, language tooling, and production operations, where small design decisions compound over time.`
         }
       ]
     },
@@ -54,23 +50,11 @@ export class AppComponent implements OnInit {
       description: [
         {
           type: 'html',
-          content: `<span class="font-bold">7-year journey</span> at <a href="https://retailcloud.com/" target="_blank" class="text-blue-600 underline">retailcloud</a>: Software Engineer → Senior → Lead → Associate Technical Architect`
+          content: `Across seven years at <a href="https://retailcloud.com/" target="_blank" class="text-blue-600 underline">retailcloud</a>, where I grew into a <span class="font-bold">Technical Architect</span>, I helped evolve core commerce and RFID systems from tightly coupled implementations toward clearer, service-oriented backends.`
         },
         {
           type: 'html',
-          content: `<span class="font-bold">Platform Development:</span><br/>
-            • Built <span class="font-bold">Console Portal</span> from scratch (now company's core back office)<br/>
-            • Architected <span class="font-bold">API Platform</span> and <span class="font-bold">New API Platform</span> for RFID solutions<br/>
-            • Developed <span class="font-bold">Restaurant Console</span> for <a href="https://retailcloud.com/partners/tikt.html" target="_blank" class="text-blue-600 underline">Tikt</a> operations<br/>
-            • Created <span class="font-bold">RFID Inventory Management App</span> reducing scan time by 95%`
-        },
-        {
-          type: 'html',
-          content: `<span class="font-bold">Technical Leadership:</span> Led 10 engineers, established DevOps practices, built OAuth2 service & gRPC SDK`
-        },
-        {
-          type: 'html',
-          content: `<span class="font-bold">Tech Stack:</span> Java, Spring Boot, Angular, TypeScript, NestJS, Node.js, Python, Microservices, OAuth2, gRPC`
+          content: `The work focused on how data and responsibilities were split across services, how integration points failed in practice, and how to keep the platform operable as the business and engineering team grew.`
         }
       ]
     },
@@ -82,15 +66,11 @@ export class AppComponent implements OnInit {
       description: [
         {
           type: 'html',
-          content: `Started career as Junior Software Engineer at <a href="https://www.m2hinfotech.com/" target="_blank" class="text-blue-600 underline">M2H Infotech LLP</a>.`
+          content: `At <a href="https://www.m2hinfotech.com/" target="_blank" class="text-blue-600 underline">M2H Infotech LLP</a> I worked on banking automation, where regulatory constraints, offline operation, and failure recovery shaped every design choice.`
         },
         {
           type: 'html',
-          content: `Developed bot automation for UAE banking clients on <span class="font-bold">WPS and FTS</span> platforms, handling full development lifecycle.`
-        },
-        {
-          type: 'html',
-          content: `Completed 3-month on-site deployment at major UAE bank for offline <span class="font-bold">banking system</span> implementation.`
+          content: `That period grounded how I think about reliability, operational discipline, and the gap between planned flows and what production systems actually do.`
         }
       ]
     }
@@ -114,14 +94,6 @@ export class AppComponent implements OnInit {
       link: 'https://www.linkedin.com/in/sajeerzeji/'
     },
     {
-      name: 'X',
-      icon: {
-        default: './assets/images/icons/social/icon-x.svg',
-        dark: './assets/images/icons/social/icon-x-light.svg',
-      },
-      link: 'https://twitter.com/sajeer_zeji'
-    },
-    {
       name: 'Github',
       icon: {
         default: './assets/images/icons/social/icon-github.svg',
@@ -130,200 +102,31 @@ export class AppComponent implements OnInit {
       link: 'https://github.com/sajeerzeji'
     },
     {
-      name: 'Medium',
-      icon: {
-        default: './assets/images/icons/social/icon-medium.svg',
-        dark: './assets/images/icons/social/icon-medium-light.svg',
-      },
-      link: 'https://sajeerzeji44.medium.com/'
-    },
-    {
-      name: 'Buy me A Coffee',
-      icon: {
-        default: './assets/images/icons/social/icon-buymeacoffee.svg',
-        dark: './assets/images/icons/social/icon-buymeacoffee.svg',
-      },
-      link: 'https://buymeacoffee.com/sajeerzeji'
-    },
-    {
-      name: 'Instagram',
-      icon: {
-        default: './assets/images/icons/social/icon-instagram.svg',
-        dark: './assets/images/icons/social/icon-instagram.svg',
-      },
-      link: 'https://www.instagram.com/sajeerzeji'
-    },
-    {
       name: 'GDG',
       icon: {
         default: './assets/images/icons/social/icon-gdg.svg',
-        dark: './assets/images/icons/social/icon-gdg.svg',
+        dark: './assets/images/icons/social/icon-gdg-light.svg',
       },
       link: 'https://gdg.community.dev/gdg-kozhikode/'
     }
   ];
 
-  // Removed - replaced with simple link in newsLetters section
-  // featuredProducts removed - was redundant with highlightProjects and petProjectsSets
-
-  petProjectsSets: any = [
-    {
-      year: '2025',
-      items: [
-        {
-          title: 'Lyticspend',
-          description: `Free and open source expense tracker. Track expenses and incomes in a simple, secure way with no cloud dependency.`,
-          link: 'https://lyticspend.online/'
-        }
-      ]
-    },
-    {
-      year: '2024',
-      items: [
-        {
-          title: 'Shopify Apps Scraper',
-          description: `Python script to scrape and analyze 9000+ Shopify apps for market research and competitive analysis.`
-        }
-      ]
-    },
-    {
-      year: '2023',
-      items: [
-        {
-          title: 'Yourslash',
-          description: `Productivity tool inspired by oSlash - create custom shortcuts for frequently used links and resources.`,
-          link: 'https://yourslash.com/'
-        },
-        {
-          title: 'Nysaclan',
-          description: `Innovation team focused on experimenting with emerging technologies and building proof-of-concepts.`,
-          link: 'https://nysaclan.com/'
-        },
-        {
-          title: 'Soul Chrome Extension',
-          description: `Chrome extension for synced note-taking across all browser tabs, enabling seamless research workflows.`,
-          link: 'https://soul.frnd.ai/'
-        }
-      ]
-    },
-    {
-      year: '2022',
-      items: [
-        {
-          title: 'Frnd.ai',
-          description: `Sales Enablement platform with AI-powered content organization, sharing, and analytics for sales teams.`,
-          link: 'https://frnd.ai'
-        },
-        {
-          title: 'Frnd.ai Chrome Extension',
-          description: `Chrome extension for content sharing and analytics across Gmail, Outlook, Hubspot, Salesforce, and LinkedIn.`,
-          link: 'https://frnd.ai'
-        }
-      ]
-    },
-    {
-      year: '2021',
-      items: [
-        {
-          title: 'CSRF Validator',
-          description: `NPM library for Node.js and NestJS to protect API requests with CSRF token validation.`,
-          link: 'https://www.npmjs.com/package/csrf-validator'
-        },
-        {
-          title: 'Multi Tenant Microservices',
-          description: `Multi-tenant microservices API platform built with Spring Boot, PostgreSQL, and FlywayDB for database versioning.`
-        }
-      ]
-    }
-  ];
-
-  highlightProjects: any = [
-    {
-      title: `Lyticspend`,
-      description: `<span class="font-bold">Open source expense tracker</span> - Privacy-first financial management with no cloud dependency.`,
-      link: 'https://lyticspend.online/'
-    },
-    {
-      title: `Yourslash`,
-      description: `<span class="font-bold">Productivity shortcuts</span> - Custom aliases for frequently accessed links and resources.`,
-      link: 'https://yourslash.com/'
-    },
-    {
-      title: `CSRF Validator`,
-      description: `<span class="font-bold">Security library</span> - NPM package for CSRF protection in Node.js and NestJS applications.`,
-      link: 'https://www.npmjs.com/package/csrf-validator'
-    }
-  ];
-
-  newsLetters: any = [
-    {
-      title: 'LinkedIn: An innovation digest',
-      link: 'https://www.linkedin.com/newsletters/7038592163324039168/'
-    },
-    {
-      title: 'Substack: An innovation digest',
-      link: 'https://innovationdigest.substack.com/'
-    }
-  ];
-
-  blogs: any = [
-    {
-      title: 'The Whole Universe is a Second',
-      link: 'https://medium.com/@sajeerzeji44/the-whole-universe-is-a-second-c8e8f228c054',
-      publishedOn: 'May 2021'
-    },
-    {
-      title: 'Spring Boot Flyway DB Version Control Integration',
-      link: 'https://medium.com/@sajeerzeji44/spring-boot-flyway-db-version-control-integration-1df2e90474e6',
-      publishedOn: 'Apr 2020'
-    },
-    {
-      title: 'OAuth2 with Django',
-      link: 'https://medium.com/@sajeerzeji44/oauth2-with-django-790e0a85f678',
-      publishedOn: 'Feb 2020'
-    },
-    {
-      title: 'RSocket for Spring Boot Microservices',
-      link: 'https://medium.com/@sajeerzeji44/rsocket-for-spring-boot-microservices-d2f68f69a615',
-      publishedOn: 'Sep 2019'
-    },
-    {
-      title: 'GRPC for Spring Boot Microservices',
-      link: 'https://medium.com/@sajeerzeji44/grpc-for-spring-boot-microservices-bd9b79569772',
-      publishedOn: 'Sep 2019'
-    },
-    {
-      title: 'Hosting your React Web App to Firebase',
-      link: 'https://medium.com/@sajeerzeji44/hosting-your-react-web-app-to-firebase-98265f45831',
-      publishedOn: 'May 2019'
-    },
-    {
-      title: 'Create React Web Application',
-      link: 'https://medium.com/@sajeerzeji44/create-react-js-application-43ff4a0fb31',
-      publishedOn: 'May 2019'
-    }
-  ];
+  // Removed highlightProjects and other unused sections
 
   talks: any = [
     {
-      year: '2025',
       talks: [
         {
-          title: 'Building Together - How AI Become your Perfect Coding Team mate',
-          description: 'A session for Edapt Team'
+          title: 'Designing systems that survive early growth',
+          description: 'Focuses on architectural decisions that hold up under rapid change — imperfect requirements, small teams, and the realities of scaling before systems are fully understood.'
         },
         {
-          title: 'Code for Future - From Planing to Scaling - A complete overview',
-          description: 'A session for Aifer Education Team'
-        }
-      ]
-    },
-    {
-      year: '2024',
-      talks: [
+          title: 'Architecture trade-offs in real production environments',
+          description: 'Explores how real-world constraints shape system design, and why many “best practices” need to be re-evaluated once systems face production load and operational pressure.'
+        },
         {
-          title: 'Coding up a business - Transforming business ideas into tech solutions - A practical insight',
-          description: 'A session for Edapt Technology team'
+          title: 'How AI changes developer workflows in practice',
+          description: 'Looks at where AI genuinely helps developers today, where it creates friction, and how teams adapt when AI becomes part of everyday engineering rather than a novelty.'
         }
       ]
     }
@@ -343,8 +146,8 @@ export class AppComponent implements OnInit {
     this.seoService.updateMetaTags({
       title: 'Sajeer Babu - Software Engineer & Architect | Portfolio',
       description: 'Building scalable solutions and exploring cutting-edge technologies. Software Engineer & Architect with 8+ years of experience in Microservices, Serverless, Web Apps, and AI Integrations. Organiser at GDG Kozhikode.',
-      url: 'https://sajeerzeji-98ac5.web.app',
-      image: 'https://sajeerzeji-98ac5.web.app/assets/images/personal/my-image.png',
+      url: 'https://sajeerzeji.com',
+      image: 'https://sajeerzeji.com/assets/images/personal/my-image.png',
       type: 'website',
       keywords: [
         'Sajeer Babu',
