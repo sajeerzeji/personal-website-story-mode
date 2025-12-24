@@ -20,26 +20,25 @@ export interface SEOConfig {
 export class SeoService {
   private defaultConfig: SEOConfig = {
     title: 'Sajeer Babu - Software Engineer & Architect',
-    description: 'Building scalable solutions and exploring cutting-edge technologies. Software Engineer & Architect with 8+ years of experience in Microservices, Serverless, Web Apps, and AI Integrations. Organiser at GDG Kozhikode.',
+    description: 'Building scalable solutions and exploring how real systems behave in production. Software Engineer & Architect focused on microservices, runtimes, and AI-assisted systems. Organiser at GDG Kozhikode.',
     image: 'https://sajeerzeji.com/assets/images/personal/my-image.png',
     url: 'https://sajeerzeji.com',
     type: 'website',
     author: 'Sajeer Babu',
     keywords: [
+      'Sajeer Babu',
       'Software Engineer',
       'Software Architect',
+      'System Design',
+      'Backend Architecture',
       'Microservices',
       'Serverless',
-      'Angular',
-      'Spring Boot',
-      'Web Development',
-      'AI Integration',
-      'GDG Kozhikode',
-      'Full Stack Developer',
       'Cloud Architecture',
-      'RFID Technology',
-      'OAuth2',
-      'Technical Leadership'
+      'Runtime Platforms',
+      'Developer Tooling',
+      'AI-assisted Systems',
+      'Web Development',
+      'GDG Kozhikode'
     ]
   };
 
@@ -132,21 +131,14 @@ export class SeoService {
       alternateName: 'Sajeer Zeji',
       url: 'https://sajeerzeji.com',
       image: 'https://sajeerzeji.com/assets/images/personal/my-image.png',
-      jobTitle: 'Software Engineer',
+      jobTitle: 'Software Engineer & Architect',
       worksFor: {
         '@type': 'Organization',
         name: 'IBM'
       },
-      alumniOf: {
-        '@type': 'Organization',
-        name: 'RetailCloud'
-      },
       sameAs: [
         'https://www.linkedin.com/in/sajeerzeji/',
-        'https://twitter.com/sajeer_zeji',
         'https://github.com/sajeerzeji',
-        'https://sajeerzeji44.medium.com/',
-        'https://www.instagram.com/sajeerzeji',
         'https://gdg.community.dev/gdg-kozhikode/'
       ],
       knowsAbout: [
@@ -161,7 +153,7 @@ export class SeoService {
         'RFID Technology',
         'OAuth2'
       ],
-      description: 'Software Engineer & Architect with 8+ years of experience in building scalable solutions. Specializes in Microservices, Serverless, Web Apps, and AI Integrations. Organiser at GDG Kozhikode.'
+      description: 'Software Engineer & Architect focused on scalable systems, runtimes, and AI-assisted systems. Organiser at GDG Kozhikode.'
     };
   }
 

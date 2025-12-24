@@ -20,7 +20,7 @@
     </button>
   </div>
 
-  <header class="dark:bg-gray-900 w-screen h-screen flex items-center tracking-[3px] relative">
+  <header class="dark:bg-gray-900 w-screen h-screen flex items-center tracking-[1px] relative">
     <div class="w-[90%] md:w-[80%] block md:flex gap-10 items-center mx-auto">
       <div class="flex flex-wrap w-[100%] md:w-[50%] mb-10 md:mb-0">
         <div class="overflow-clip rounded-b-3xl relative">
@@ -38,12 +38,11 @@
             Sajeer Babu
           </div>
           <div class="mt-4">
-            Software Architect focused on how real systems scale, fail, and evolve especially at early stages where technical decisions compound quickly.
+            Software Architect focused on how real systems scale, fail, and evolve, especially at early stages where technical decisions compound quickly.
           </div>
           <div class="mt-4">
-            I think deeply about system design under real constraints incomplete requirements, growing teams, production failures, and the gap between architecture diagrams and reality.
-
-My work spans backend platforms, AI-assisted systems, and developer tooling, with a strong bias toward clarity over complexity.
+            I think deeply about system design under real constraints and production failures, and the gap between architecture diagrams and reality.
+I favor clarity over complexity.
           </div>
           <div class="w-full flex items-center gap-4 mt-4 text-black dark:text-white">
             <a class="cursor-pointer" *ngFor="let socialLink of socialLinks" target="_blank" [href]="socialLink.link" [title]="socialLink.name" [attr.aria-label]="'Visit ' + socialLink.name + ' profile'">
@@ -72,7 +71,7 @@ My work spans backend platforms, AI-assisted systems, and developer tooling, wit
           <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-400">Professional Summary</h3>
           <div class="space-y-1 text-base font-normal text-gray-500">
             <p><span class="font-semibold text-gray-700">Current Role:</span> Software Engineer at IBM (Runtimes)</p>
-            <p><span class="font-semibold text-gray-700">Experience:</span> 8+ years in software development &amp; architecture</p>
+            <p><span class="font-semibold text-gray-700">Experience:</span> {{ yearsOfExperience }}+ years in software development &amp; architecture</p>
             <p><span class="font-semibold text-gray-700">Expertise:</span> System design, service-oriented backends, developer tooling, runtime platforms, AI-assisted systems</p>
             <p><span class="font-semibold text-gray-700">Focus:</span> Reliability, operability, and how small design decisions compound in production environments</p>
           </div>

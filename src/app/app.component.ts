@@ -22,8 +22,18 @@ export class AppComponent implements OnInit {
   }
 
   name = 'Sajeer';
-  profileDescription = 'Building the future, one line of code at a time.\n\nSoftware Engineer & Architect at IBM with 8+ years crafting scalable solutions.\n\nFrom microservices to AI-powered apps, I turn complex problems into elegant systems.\n\nOrganizer at GDG Kozhikode | Open Source Enthusiast | AI Integration Specialist';
+  profileDescription = 'Building the future, one line of code at a time.\n\nSoftware Engineer & Architect at IBM with years of experience crafting scalable solutions.\n\nFrom microservices to AI-powered apps, I turn complex problems into elegant systems.\n\nOrganizer at GDG Kozhikode | Open Source Enthusiast | AI Integration Specialist';
   profileImage = './assets/images/personal/my-image.png'
+
+  get yearsOfExperience(): number {
+    const startDate = new Date(2016, 8, 1); // September 2016 (month is 0-indexed)
+    const currentDate = new Date();
+    const yearsDiff = currentDate.getFullYear() - startDate.getFullYear();
+    const monthsDiff = currentDate.getMonth() - startDate.getMonth();
+    
+    // Adjust if current month is before September
+    return monthsDiff < 0 ? yearsDiff - 1 : yearsDiff;
+  }
 
   experiences = [
     {
@@ -105,7 +115,7 @@ export class AppComponent implements OnInit {
       name: 'GDG',
       icon: {
         default: './assets/images/icons/social/icon-gdg.svg',
-        dark: './assets/images/icons/social/icon-gdg-light.svg',
+        dark: './assets/images/icons/social/icon-gdg.svg',
       },
       link: 'https://gdg.community.dev/gdg-kozhikode/'
     }
@@ -145,7 +155,7 @@ export class AppComponent implements OnInit {
     // Update meta tags
     this.seoService.updateMetaTags({
       title: 'Sajeer Babu - Software Engineer & Architect | Portfolio',
-      description: 'Building scalable solutions and exploring cutting-edge technologies. Software Engineer & Architect with 8+ years of experience in Microservices, Serverless, Web Apps, and AI Integrations. Organiser at GDG Kozhikode.',
+      description: `Building scalable solutions and exploring cutting-edge technologies. Software Engineer & Architect with ${this.yearsOfExperience}+ years of experience in Microservices, Serverless, Web Apps, and AI Integrations. Organiser at GDG Kozhikode.`,
       url: 'https://sajeerzeji.com',
       image: 'https://sajeerzeji.com/assets/images/personal/my-image.png',
       type: 'website',
